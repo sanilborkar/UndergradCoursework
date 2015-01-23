@@ -1,0 +1,71 @@
+
+Building configuration...
+Current configuration:
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/1
+
+!
+interface Ethernet0/2
+
+!
+interface Ethernet0/3
+
+!
+interface Ethernet0/4
+
+!
+interface Ethernet0/5
+
+!
+interface Ethernet0/6
+
+!
+interface Ethernet0/7
+
+!
+interface Ethernet0/8
+
+!
+interface Ethernet0/9
+
+!
+interface Ethernet0/10
+
+!
+interface Ethernet0/11
+
+!
+interface Ethernet0/12
+
+!
+interface FastEthernet0/26
+
+!
+!
+interface FastEthernet0/27
+
+!
+!
+line console
+!
+End
+

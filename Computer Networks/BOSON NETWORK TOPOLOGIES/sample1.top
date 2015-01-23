@@ -1,0 +1,157 @@
+[General]
+NumberOfRouters=2
+NumberOfSwitches=2
+NumberOfPCs=6
+NumberOfConnectors=9
+Version=6.0.342
+[Router1]
+Hostname=Router 1
+Devicename=Router 1
+Series=4500
+Model=4500
+Ethernet=0/4
+FastEthernet=0
+GigabitEthernet=0
+Token=0
+Serial=0
+BRI=0
+xpos= 6270
+ypos= 1860
+[Router2]
+Hostname=Router 2
+Devicename=Router 2
+Series=4500
+Model=4500
+Ethernet=0/4
+FastEthernet=0
+GigabitEthernet=0
+Token=0
+Serial=0
+BRI=0
+xpos= 11325
+ypos= 1710
+[Switch1]
+Hostname=Switch 1
+Devicename=Switch 1
+Series=1900
+Model=1912
+Ethernet= 12
+FastEthernet= 2
+GigabitEthernet= 0
+Token= 0
+Serial= 0
+BRI= 0
+xpos= 5310
+ypos= 4080
+[Switch2]
+Hostname=Switch 2
+Devicename=Switch 2
+Series=1900
+Model=1912
+Ethernet= 12
+FastEthernet= 2
+GigabitEthernet= 0
+Token= 0
+Serial= 0
+BRI= 0
+xpos= 7575
+ypos= 4350
+[PC1]
+Name=PC 1
+Devicename=PC 1
+xpos= 4740
+ypos= 6225
+Model=Win 98
+[PC2]
+Name=PC 2
+Devicename=PC 2
+xpos= 6270
+ypos= 6555
+Model=Win 98
+[PC3]
+Name=PC 3
+Devicename=PC 3
+xpos= 8820
+ypos= 5805
+Model=Win 98
+[PC4]
+Name=PC 4
+Devicename=PC 4
+xpos= 11250
+ypos= 3615
+Model=Win 98
+[PC5]
+Name=PC 5
+Devicename=PC 5
+xpos= 12585
+ypos= 3105
+Model=Win 98
+[PC6]
+Name=PC 6
+Devicename=PC 6
+xpos= 7560
+ypos= 6030
+Model=Win 98
+[Connector1]
+dev1name=PC 1
+dev2name=Switch 1
+dev1interface=Ethernet 0
+connectortype=Ethernet
+dev2interface=Ethernet 0/1
+caption=PC1,E0-S1E0/1
+[Connector2]
+dev1name=PC 2
+dev2name=Switch 1
+dev1interface=Ethernet 0
+connectortype=Ethernet
+dev2interface=Ethernet 0/2
+caption=PC2,E0-S1E0/2
+[Connector3]
+dev1name=PC 3
+dev2name=Switch 2
+dev1interface=Ethernet 0
+connectortype=Ethernet
+dev2interface=Ethernet 0/1
+caption=PC3,E0-S2E0/1
+[Connector4]
+dev1name=PC 6
+dev2name=Switch 2
+dev1interface=Ethernet 0
+connectortype=Ethernet
+dev2interface=Ethernet 0/2
+caption=PC6,E0-S2E0/2
+[Connector5]
+dev1name=Switch 1
+dev2name=Router 1
+dev1interface=Ethernet 0/3
+connectortype=Ethernet
+dev2interface=Ethernet 0/0
+caption=S1E0/3-R1E0/0
+[Connector6]
+dev1name=Switch 2
+dev2name=Router 1
+dev1interface=Ethernet 0/3
+connectortype=Ethernet
+dev2interface=Ethernet 0/1
+caption=S2E0/3-R1E0/1
+[Connector7]
+dev1name=PC 4
+dev2name=Router 2
+dev1interface=Ethernet 0
+connectortype=Ethernet
+dev2interface=Ethernet 0/0
+caption=PC4,E0-R2E0/0
+[Connector8]
+dev1name=PC 5
+dev2name=Router 2
+dev1interface=Ethernet 0
+connectortype=Ethernet
+dev2interface=Ethernet 0/1
+caption=PC5,E0-R2E0/1
+[Connector9]
+dev1name=Router 1
+dev2name=Router 2
+dev1interface=Ethernet 0/2
+connectortype=Ethernet
+dev2interface=Ethernet 0/2
+caption=R1E0/2-R2E0/2

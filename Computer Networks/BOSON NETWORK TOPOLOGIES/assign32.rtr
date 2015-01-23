@@ -1,0 +1,60 @@
+
+!
+Version 12.1
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+ip subnet-zero
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Serial0
+ no ip address
+ no ip directed-broadcast
+ shutdown
+!
+interface Serial1
+ no ip address
+ no ip directed-broadcast
+ shutdown
+!
+interface Ethernet0
+ ip address 172.28.0.3 255.255.0.0
+ no ip directed-broadcast
+!
+interface Ethernet1
+ ip address 172.27.0.2 255.255.0.0
+ no ip directed-broadcast
+!
+router rip
+ network 172.28.0.0
+ network 172.27.0.0
+!
+!
+!
+ip classless
+no ip http server
+!
+!
+!
+!
+!
+line con 0
+ transport input none
+line aux 0
+line vty 0 4
+!
+no scheduler allocate
+end
+
